@@ -1,0 +1,32 @@
+.frame {
+  width: 600px;
+  height: 550px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+}
+.point_btn {
+  position: absolute;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  /* padding: 0.5rem 0.75rem; */
+  cursor: pointer;
+}
+
+.point_btn.active {
+  animation: click 3s forwards;
+}
+
+@keyframes click {
+  0% {
+    background-color: inherit;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    display: none;
+  }
+}
